@@ -1,0 +1,45 @@
+[user]
+  email = s.k18@icloud.com
+  name = tusmasoma
+[pager]
+  diff = delta
+  log = delta
+  reflog = delta
+  show = delta
+[delta]
+  plus-style = "syntax #012800"
+  minus-style = "syntax #340001"
+  syntax-theme = Monokai Extended
+  navigate = true
+[interactive]
+  diffFilter = delta --color-only
+[commit]
+	template = /Users/kimurasatsuuma/dotfiles/git/.gitmessage
+  verbose = true
+  gpgsign = false
+[core]
+  editor = vim
+[color]
+  ui = true
+  excludeFile = ""
+[alias]
+  ck = checkout
+  ss = status
+  df = diff
+  co = commit -a
+  br = branch
+  p = push
+  ph = push origin head
+  phf = push -f origin head
+  pl = pull
+  graph = log --pretty=format:'%Cgreen[%cd] %Cblue%h %Cred<%cn> %Creset%s' --date=short  --decorate --graph --branches --tags --remotes
+  plr = !"git pull --rebase origin $(git symbolic-ref refs/remotes/origin/HEAD | sed 's@^refs/remotes/origin/@@')"
+  fixup = commit --amend -C HEAD
+[fetch]
+  prune = true
+[pull]
+  rebase = true
+[diff]
+  tool = vimdiff
+[difftool]
+  prompt = false
