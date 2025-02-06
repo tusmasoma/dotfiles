@@ -16,7 +16,7 @@
 [interactive]
   diffFilter = delta --color-only
 [commit]
-	template = /Users/kimurasatsuuma/dotfiles/git/.gitmessage
+	template = ~/dotfiles/git/.gitmessage
   verbose = true
   gpgsign = false
 [core]
